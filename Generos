@@ -1,0 +1,34 @@
+CREATE TABLE IF NOT EXISTS `genero` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `genero` set('Accion','Cocina','Aventura','Seinen','Shonen','Comedia','Demonios','Deportes','Drama','Echii','Escolares','Fantasía','Gore','Harem','Juegos','Mecha','Misterio','Musica','Psicologico','Recuerdos de la vida','Romance','Vampiros','Yuri','Lolis') NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4;
+
+-- Volcando datos para la tabla proyectoanime.genero: ~24 rows (aproximadamente)
+/*!40000 ALTER TABLE `genero` DISABLE KEYS */;
+INSERT INTO `genero` (`id`, `genero`) VALUES
+	(1, 'Accion'),
+	(2, 'Cocina'),
+	(3, 'Aventura'),
+	(4, 'Seinen'),
+	(5, 'Shonen'),
+	(6, 'Comedia'),
+	(7, 'Demonios'),
+	(8, 'Deportes'),
+	(9, 'Drama'),
+	(10, 'Echii'),
+	(11, 'Escolares'),
+	(12, 'Fantasía'),
+	(13, 'Gore'),
+	(14, 'Harem'),
+	(15, 'Juegos'),
+	(16, 'Mecha'),
+	(17, 'Misterio'),
+	(18, 'Musica'),
+	(19, 'Psicologico'),
+	(20, 'Recuerdos de la vida'),
+	(21, 'Romance'),
+	(22, 'Vampiros'),
+	(23, 'Yuri'),
+	(24, 'Lolis');
