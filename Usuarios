@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(255) NOT NULL,
+  `contrasena` varchar(255) NOT NULL,
+  `imagen` varchar(255) DEFAULT 'sagiri',
+  PRIMARY KEY (`id_usuario`),
+  UNIQUE KEY `id_usuario` (`id_usuario`),
+  UNIQUE KEY `usuario` (`usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+
+-- Volcando datos para la tabla proyectoanime.usuarios: ~10 rows (aproximadamente)
+/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` (`id_usuario`, `usuario`, `contrasena`, `imagen`) VALUES
+	(1, 'fernando', 'silvia', 'sagiri'),
+	(2, 'xavier', 'silva', 'sagiri'),
+	(3, 'silva', 'silva', 'sagiri'),
+	(4, 'vera', 'silva', 'sagiri'),
+	(5, 'shiro', 'silva', 'sagiri'),
+	(6, 'shuvi', 'silva', 'sagiri'),
+	(7, 'sora', 'silva', 'sagiri'),
+	(8, 'shaco', 'silva', 'sagiri'),
+	(9, 'patata', 'silva', 'sagiri'),
+	(10, 'lenteja', 'silva', 'sagiri');
